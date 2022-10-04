@@ -3,14 +3,14 @@ import { IsObject, IsNotEmpty, IsNumber, IsString, IsUrl } from 'class-validator
 import { Payments } from '../entities/payments.entity';
 import { Product } from '../entities/product.entity';
 
-export class BuyProductDto {
+export class ProducPaymenttDto {
 
   @IsObject()
   @ApiProperty({
     description: 'Detalhes do produo',
     example: '{ "cod":"xxxxxxxxx-xxxxxxxxx-0", "name": "microsystems 150 Panasonic", "value": 1200.00 }'
   })
-  product: Product;  
+  produto: Product;  
 
 
   @IsObject()
@@ -18,6 +18,6 @@ export class BuyProductDto {
     description: 'Detalhes do pagamento',
     example: '{ "entry": 500.00, "amount": 6 }'
   })
-  paymentTerms: Payments;  
+  condicaoPagamento: Payments;  
 
 }

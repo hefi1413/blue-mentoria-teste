@@ -1,8 +1,8 @@
 export class Product {
   id?: string;
-  cod: string;
-  name: string;
-  value: number;
+  codido: string;
+  nome: string;
+  valor: number;
   createdAt?: Date;
   updatedAt?: Date;
 }
