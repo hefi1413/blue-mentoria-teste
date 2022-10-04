@@ -12,7 +12,7 @@ import {
   UnauthorizedException,
 } from '@nestjs/common';
 import { ProductService } from './products.service';
-import { BuyProductDto } from './dto/buy-product.dto';
+import { ProducPaymenttDto } from './dto/payment-product.dto';
 import { ApiOperation, ApiTags } from '@nestjs/swagger';
 
 @ApiTags('products')
@@ -23,8 +23,8 @@ export class ProductsController {
   @ApiOperation({
     summary: 'Relizar o pagamento de um produto',
   })
-  @Patch('payment')
-  paymentTerms(@Body() productPaymentDto: BuyProductDto,
+  @Post('payment')
+  paymentTerms(@Body() productPaymentDto: ProducPaymenttDto,
   ) {
     return this.productsService.productPayment(productPaymentDto);
   }
