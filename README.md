@@ -24,13 +24,16 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+Projeto De Mentoria de Vagas.
 
 ## Installation
 
 ```bash
 $ npm install
 ```
+
+## Configuration
+Para alterar o valor da taxa selic altere a variável "SELIC" no arquivo .env conforme o arquivo .env.example
 
 ## Running the app
 
