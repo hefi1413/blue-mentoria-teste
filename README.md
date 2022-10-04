@@ -35,13 +35,13 @@ Para alterar o valor da taxa selic altere a variável "SELIC" no arquivo .env co
 
 ## Running the app
 ```bash
-# development
 $ npm run start
 
 ```
 
 ## Support
 hefi1413@gmail.com
+
 
 ## Stay in touch
 - Author - [Elieldo Martins](hefi1413@gmail.com)
