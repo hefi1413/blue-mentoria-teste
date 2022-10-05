@@ -64,10 +64,12 @@ export class ProductService {
         // valor da parcela
         let quota =vToCalc / amount;
         // valor da parcela com juros
-        if ( i > 5 ) {
+        if ( i > 6 ) {
           quota +=  ( selic * quota ) / 100;
+          response.push( { "numeroParcela": i, "valor": quota, "taxaJurosAoMes": selic } );
+        } else {
+          response.push( { "numeroParcela": i, "valor": quota, "taxaJurosAoMes": 1 } );
         }
-        response.push( { "numeroParcela": i, "valor": quota, "taxaJurosAoMes": i > 5 ? selic:  1 } );
       }
 
       return response;
